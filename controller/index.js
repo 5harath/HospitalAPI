@@ -2,7 +2,7 @@ const Doctor = require('../models/doctor');
 const jwt = require('jsonwebtoken');
 // this is welcome router function
 module.exports.home = async function (req, res) {
-    return res.send("<h1>welcome to hospital api || </h1>");
+    return res.send("<h1>The API is live</h1>");
 }
 // this is register function
 module.exports.Register = async function (req, res) {
