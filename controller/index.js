@@ -13,9 +13,9 @@ module.exports.Register = async function (req, res) {
             doctorPresent = new Doctor(req.body);
             doctorRegister = await doctorPresent.save();
         }
-        return res.send(200).json({
-            message: "Doctor Register!!",
-            doctor: doctorRegister
+        return res.json(200, {
+            message: "Registration SuccessFully !!",
+            token: doctorRegister
         })
     } catch (error) {
         return res.send("Error in registation !!");
